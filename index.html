@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mila Rose Portfolio?</title>
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div>
-    <h1>Header</h1>
-  <p>My supercool header</p>
-  </div>
-  
 
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p>Software Developer</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Welcome to my portfolio! I am a passionate software developer with expertise in
+                web development and a strong foundation in programming languages such as HTML, CSS,
+                JavaScript, and more.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project" onclick="showProjectModal('Project 1', 'Description of Project 1.')">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <!-- Add more projects with onclick events as needed -->
+        </div>
+    </section>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <footer>
+        <!-- ... (existing footer content) ... -->
+    </footer>
+
+    <script src="main.js"></script>
 </body>
+
+</html>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me through the following channels:</p>
+            <ul>
+                <li>Email: your.email@example.com</li>
+                <li>LinkedIn: <a href="#" target="_blank">Your LinkedIn Profile</a></li>
+                <li>GitHub: <a href="#" target="_blank">Your GitHub Profile</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
 </html>
