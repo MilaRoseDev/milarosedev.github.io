@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mila Rose - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mila Rose - Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-lKuw/59K8s3kpfG1GA1SxKkAX5TCWjQ8AchHTilzCOhF5fKOGTxgsUE3CJg1TIQ3" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
 <body>
     <header>
@@ -20,21 +20,99 @@
         <div class="container">
             <h2>About Me</h2>
             <p>
-                Welcome to my portfolio! I am a Software Developer currently working in Java Spring, JavaScript/React and C#.
+                Welcome to my portfolio! I am a software Developer currently working in Java Spring and Javascript/React.
+                I have an MSc in Computer Science and a keen interest in the world of IoT. 
             </p>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div class="container">
+            <table>
+                <tr>
+                  <th>Skill</th>
+                  <th>Level</th>
+                </tr>
+                <tr>
+                  <td>Java</td>
+                  <td><i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i></td>
+                </tr>
+                <tr>
+                  <td>Spring</td>
+                  <td><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i></td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        </td>
+                  </tr>
+                  <tr>
+                    <td>MongoDB</td>
+                    <td><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>SQL</td>
+                    <td><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>React</td>
+                    <td><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        </td>
+                  </tr>
+                  <tr>
+                    <td>HTML</td>
+                    <td><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i></td>
+                  </tr>
+                  <tr>
+                    <td>CSS</td>
+                    <td><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i></td>
+                  </tr>
+              </table>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-            <div class="project" onclick="showProjectModal('Project 1', 'Description of Project 1.')">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-            <!-- Add more projects with onclick events as needed -->
+                 <!-- Project 1 -->
+        <div class="project" onclick="showProjectModal('Project 1', 'Description of Project 1.')">
+            <h3>Autoboxing Banking System: Java</h3>
+            <p>Description of Project 1.</p>
+            <a href="https://github.com/MilaRoseDev/BankingSystem/tree/main" target="_blank">View Project</a>
         </div>
+
+        <!-- Project 2 -->
+        <div class="project" onclick="showProjectModal('Project 2', 'Description of Project 2.')">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+            <a href="https://github.com/MilaRoseDev/SecondProject/tree/main" target="_blank">View Project</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project" onclick="showProjectModal('Project 3', 'Description of Project 3.')">
+            <h3>Project 3</h3>
+            <p>Description of Project 3.</p>
+            <a href="https://github.com/MilaRoseDev/ThirdProject/tree/main" target="_blank">View Project</a>
+        </div>
+
+        <!-- Add more projects as needed -->
+
+    </div>
     </section>
 
     <div id="projectModal" class="modal">
@@ -46,33 +124,21 @@
     </div>
 
     <footer>
-        <!-- ... (existing footer content) ... -->
-    </footer>
-
-    <script src="main.js"></script>
-</body>
-
-</html>
-
-    <section id="contact">
         <div class="container">
+            <p>&copy; 2024 Mila Rose. All rights reserved.</p>
             <h2>Contact Me</h2>
             <p>Feel free to reach out to me through the following channels:</p>
             <ul>
-                <li>Email: your.email@example.com</li>
-                <li>LinkedIn: <a href="#" target="_blank">https://www.linkedin.com/in/mila-rose-shields-2954a21a0/</a></li>
-                <li>GitHub: <a href="#" target="_blank">https://github.com/MilaRoseDev</a></li>
+                <li><i class="far fa-envelope"></i> Email: <a href="mailto:milarose.dev@gmail.com">milarose.dev@gmail.com</a></li>
+                <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/mila-rose-shields-2954a21a0/" target="_blank">LinkedIn</a></li>
+                <li><i class="fab fa-github"></i> GitHub: <a href="https://github.com/MilaRoseDev" target="_blank">GitHub</a></li>
             </ul>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/f41f0eecda.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
