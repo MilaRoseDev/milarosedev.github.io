@@ -6,6 +6,11 @@
         <title>Mila Rose - Portfolio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-lKuw/59K8s3kpfG1GA1SxKkAX5TCWjQ8AchHTilzCOhF5fKOGTxgsUE3CJg1TIQ3" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     </head>
 
 <body>
@@ -90,32 +95,49 @@
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-                 <!-- Project 1 -->
-        <div class="project" onclick="showProjectModal('Project 1', 'Description of Project 1.')">
-            <h3>Autoboxing Banking System: Java</h3>
-            <p>Description of Project 1.</p>
-            <a href="https://github.com/MilaRoseDev/BankingSystem/tree/main" target="_blank">View Project</a>
+    
+            <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="project" onclick="showProjectModal('Project 1', 'Description of Project 1.')">
+                            <h3>Autoboxing Banking System: Java</h3>
+                            <p>Bank managment app using autoboxing in Java. This console app allows the user to control Branches, Customers, staff and bank acconts.</p>
+                            <a href="https://github.com/MilaRoseDev/BankingSystem/tree/main" target="_blank">View Project</a>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="project" onclick="showProjectModal('Project 2', 'Description of Project 2.')">
+                            <h3>Driver Managment App: C#</h3>
+                            <p>This project was a Uni project the aim is to manage a driver booking system for trucks to be booked for avaiability or not. This app also allows different users to login</p>
+                            <a href="https://github.com/MilaRoseDev/DriverBookingApp/tree/main" target="_blank">View Project</a>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="project" onclick="showProjectModal('Project 3', 'Description of Project 3.')">
+                            <h3>Project 3</h3>
+                            <p>Description of Project 3.</p>
+                            <a href="https://github.com/MilaRoseDev/ThirdProject/tree/main" target="_blank">View Project</a>
+                        </div>
+                    </div>
+    
+                    <!-- Add more projects as needed -->
+    
+                </div>
+    
+                <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+    
         </div>
-
-        <!-- Project 2 -->
-        <div class="project" onclick="showProjectModal('Project 2', 'Description of Project 2.')">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
-            <a href="https://github.com/MilaRoseDev/SecondProject/tree/main" target="_blank">View Project</a>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project" onclick="showProjectModal('Project 3', 'Description of Project 3.')">
-            <h3>Project 3</h3>
-            <p>Description of Project 3.</p>
-            <a href="https://github.com/MilaRoseDev/ThirdProject/tree/main" target="_blank">View Project</a>
-        </div>
-
-        <!-- Add more projects as needed -->
-
-    </div>
     </section>
-
     <div id="projectModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeProjectModal()">&times;</span>
