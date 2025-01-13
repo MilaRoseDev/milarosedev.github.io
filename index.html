@@ -3,45 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="description" content="Mila Rose Shields - Portfolio">
+    <meta name="author" content="Mila Rose Shields">
+    <title>Mila Rose Shields - Portfolio</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-Xx7mgC6K9Dlm0z3PfNQanQlI2/3BClYYZzF0AKjYg79Foq9G2OFt6yJ3FIygAXRTZ1z4oqBu7rnDddLsK52xyQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Mila Rose</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Mila Rose</a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-    </header>
-    
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Hello, I'm Mila Rose</h1>
-            <p>A Fullstack Developer</p>
-            <a href="#projects" class="btn">View My Work</a>
         </div>
-    </section>
+    </nav>
 
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section class="resume-section animated-fade-in" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">Mila <span class="text-primary">Rose</span></h1>
+                <p class="lead">I am a passionate Software and Web Developer based in Liverpool. My expertise spans across front-end and back-end technologies, with a deep commitment to clean, efficient, and scalable code.</p>
+                <ul class="social-icons">
+                    <li><a href="https://github.com/MilaRoseDev" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="mailto:chanmilarose@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2>Experience</h2>
+                <div class="job">
+                    <h3>Freelance Software and Web Developer</h3>
+                    <p>Self-Employed, Liverpool | 2023 – Present</p>
+                    <ul>
+                        <li>
+                            Successfully migrated a website and domain for <a href="https://transactual.org.uk/" target="_blank">Transactual UK</a>, rebuilding lost pages, adding new content, and setting up a secure e-commerce platform.
+                        </li>
+                        <li>
+                            Worked with challenging client demands, adapting to frequent changes and delivering a polished, functional product on time.
+                        </li>
+                        <li>
+                            Collaborated with various clients to build websites and backend systems using Java Spring Boot and React, while adhering to client confidentiality.
+                        </li>
+                        <li>
+                            Designed APIs tailored to client requirements, ensuring efficient communication between front-end and back-end systems.
+                        </li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Java Developer</h3>
+                    <p>Yodel, Liverpool | July 2022 – 2023</p>
+                    <ul>
+                        <li>
+                            Started as a Junior Full Stack Developer and was promoted to Mid-Level Developer within a year.
+                        </li>
+                        <li>
+                            Focused primarily on back-end development using Java (Spring), MongoDB, Kibana, and Kafka, while also utilizing SQL for database management and queries.
+                        </li>
+                        <li>
+                            Contributed to front-end development with HTML, CSS, JavaScript, and React, ensuring seamless integration with back-end systems.
+                        </li>
+                        <li>
+                            Played a key role in designing and implementing tracking APIs and web applications, managing projects from inception to completion.
+                        </li>
+                        <li>
+                            Held responsibility for accessing and working with live data, ensuring accuracy and security in production environments.
+                        </li>
+                        <li>
+                            Stepped in to facilitate Scrum meetings and project planning in the absence of the Scrum Master, showcasing leadership and organizational skills.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React, Java (Spring)</li>
+                    <li>MongoDB, MySQL</li>
+                    <li>Bootstrap, Git, Kafka</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="resume-section" id="contact">
+            <div class="resume-section-content">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:chanmilarose@gmail.com">chanmilarose@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/MilaRoseDev" target="_blank">github.com/MilaRoseDev</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <p>Contact me at: <a href="mailto:milarose.dev@gmail.com">milarose.dev@gmail.com</a></p>
-            <p>
-                <a href="https://github.com/MilaRoseDev" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            </p>
-        </div>
+        <p>&copy; 2024 Mila Rose Shields</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript -->
+    <script>
+        // Add animations for sections
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll(".animated-fade-in");
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                section.style.transition = "opacity 1s";
+                setTimeout(() => section.style.opacity = 1, 200);
+            });
+        });
+    </script>
 </body>
 </html>

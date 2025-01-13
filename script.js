@@ -1,9 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const burger = document.querySelector('.burger');
-    const navLinks = document.querySelector('.nav-links');
-    
-    burger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        burger.classList.toggle('toggle');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('highlight');
+        } else {
+            entry.target.classList.remove('highlight');
+        }
     });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.resume-section').forEach(section => {
+    observer.observe(section);
 });
