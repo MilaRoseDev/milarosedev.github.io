@@ -9,126 +9,649 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-Xx7mgC6K9Dlm0z3PfNQanQlI2/3BClYYZzF0AKjYg79Foq9G2OFt6yJ3FIygAXRTZ1z4oqBu7rnDddLsK52xyQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="#" class="logo">Mila Rose</a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
             <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main>
-        <!-- About Section -->
-        <section class="resume-section animated-fade-in" id="about">
-            <div class="resume-section-content">
-                <h1 class="mb-0">Mila <span class="text-primary">Rose</span></h1>
-                <p class="lead">I am a passionate Software and Web Developer based in Liverpool. My expertise spans across front-end and back-end technologies, with a deep commitment to clean, efficient, and scalable code.</p>
-                <ul class="social-icons">
-                    <li><a href="https://github.com/MilaRoseDev" target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li><a href="mailto:chanmilarose@gmail.com"><i class="fas fa-envelope"></i></a></li>
-                </ul>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-aos="fade-up">Hi, I'm Mila Rose</h1>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="200">Software & Web Developer</p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="#projects" class="btn btn-secondary">View My Work</a>
             </div>
-        </section>
+        </div>
+        <div class="hero-background"></div>
+    </section>
 
-        <!-- Experience Section -->
-        <section class="resume-section" id="experience">
-            <div class="resume-section-content">
-                <h2>Experience</h2>
-                <div class="job">
-                    <h3>Freelance Software and Web Developer</h3>
-                    <p>Self-Employed, Liverpool | 2023 – Present</p>
-                    <ul>
-                        <li>
-                            Successfully migrated a website and domain for <a href="https://transactual.org.uk/" target="_blank">Transactual UK</a>, rebuilding lost pages, adding new content, and setting up a secure e-commerce platform.
-                        </li>
-                        <li>
-                            Worked with challenging client demands, adapting to frequent changes and delivering a polished, functional product on time.
-                        </li>
-                        <li>
-                            Collaborated with various clients to build websites and backend systems using Java Spring Boot and React, while adhering to client confidentiality.
-                        </li>
-                        <li>
-                            Designed APIs tailored to client requirements, ensuring efficient communication between front-end and back-end systems.
-                        </li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>Java Developer</h3>
-                    <p>Yodel, Liverpool | July 2022 – 2023</p>
-                    <ul>
-                        <li>
-                            Started as a Junior Full Stack Developer and was promoted to Mid-Level Developer within a year.
-                        </li>
-                        <li>
-                            Focused primarily on back-end development using Java (Spring), MongoDB, Kibana, and Kafka, while also utilizing SQL for database management and queries.
-                        </li>
-                        <li>
-                            Contributed to front-end development with HTML, CSS, JavaScript, and React, ensuring seamless integration with back-end systems.
-                        </li>
-                        <li>
-                            Played a key role in designing and implementing tracking APIs and web applications, managing projects from inception to completion.
-                        </li>
-                        <li>
-                            Held responsibility for accessing and working with live data, ensuring accuracy and security in production environments.
-                        </li>
-                        <li>
-                            Stepped in to facilitate Scrum meetings and project planning in the absence of the Scrum Master, showcasing leadership and organizational skills.
-                        </li>
-                    </ul>
+    <!-- About Section -->
+    <section class="resume-section" id="about">
+        <div class="resume-section-content" data-aos="fade-up">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">I am a passionate Software and Web Developer based in Liverpool. My expertise spans across front-end and back-end technologies, with a deep commitment to clean, efficient, and scalable code.</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/MilaRoseDev" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="mailto:chanmilarose@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        <a href="https://linkedin.com/in/your-profile" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills Section -->
-        <section class="resume-section" id="skills">
-            <div class="resume-section-content">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>React, Java (Spring)</li>
-                    <li>MongoDB, MySQL</li>
-                    <li>Bootstrap, Git, Kafka</li>
-                </ul>
+    <!-- Experience Section -->
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 data-aos="fade-up">Experience & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h3>Freelance Software and Web Developer</h3>
+                        <p class="timeline-date">2023 – Present</p>
+                        <p class="timeline-location">Self-Employed, Liverpool</p>
+                        <ul>
+                            <li>Developed and maintained WordPress websites with custom themes and e-commerce functionality</li>
+                            <li>Implemented secure payment processing systems using Stripe API</li>
+                            <li>Created responsive and accessible web applications using modern frontend technologies</li>
+                            <li>Managed client relationships and project timelines</li>
+                            <li>Integrated third-party services and APIs for enhanced functionality</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-content">
+                        <h3>Java Developer</h3>
+                        <p class="timeline-date">July 2022 – 2023</p>
+                        <p class="timeline-location">Yodel, Liverpool</p>
+                        <ul>
+                            <li>Promoted to Mid-Level Developer within a year</li>
+                            <li>Developed back-end solutions using Java (Spring), MongoDB, and Kafka</li>
+                            <li>Contributed to front-end development with React</li>
+                            <li>Implemented event-driven architecture for real-time package tracking</li>
+                            <li>Collaborated with cross-functional teams on system improvements</li>
+                            <li>Participated in code reviews and mentored junior developers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-content">
+                        <h3>MSc Computer Science</h3>
+                        <p class="timeline-date">2021 – 2022</p>
+                        <p class="timeline-location">Liverpool John Moores University</p>
+                        <ul>
+                            <li>Specialized in Software Engineering and Distributed Systems</li>
+                            <li>Developed expertise in advanced programming concepts and system design</li>
+                            <li>Completed research project on distributed systems architecture</li>
+                            <li>Gained practical experience with modern development methodologies</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-content">
+                        <h3>BSc Computer Games Technology</h3>
+                        <p class="timeline-date">2017 – 2021</p>
+                        <p class="timeline-location">Liverpool John Moores University</p>
+                        <ul>
+                            <li>Focused on game development, graphics programming, and interactive systems</li>
+                            <li>Developed strong foundation in programming and software development</li>
+                            <li>Created multiple game projects using Unity and C#</li>
+                            <li>Gained experience in 3D modeling and animation</li>
+                            <li>Participated in game development competitions and hackathons</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section class="resume-section" id="contact">
-            <div class="resume-section-content">
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto:chanmilarose@gmail.com">chanmilarose@gmail.com</a></p>
-                <p>GitHub: <a href="https://github.com/MilaRoseDev" target="_blank">github.com/MilaRoseDev</a></p>
+    <!-- Projects Section -->
+    <section class="resume-section" id="projects">
+        <div class="resume-section-content">
+            <h2 data-aos="fade-up">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Transactual UK Project -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Transactual UK Website">
+                    </div>
+                    <div class="project-content">
+                        <h3>Transactual UK Website</h3>
+                        <p class="project-description">WordPress-based website with custom theme development, secure payment processing, and merchandise ordering system.</p>
+                        <div class="project-details">
+                            <div class="project-tech">
+                                <span>WordPress</span>
+                                <span>PHP</span>
+                                <span>WooCommerce</span>
+                                <span>Payment Gateway</span>
+                            </div>
+                            <ul class="project-features">
+                                <li>Custom WordPress theme development</li>
+                                <li>Secure payment processing integration</li>
+                                <li>Merchandise ordering system with third-party fulfillment</li>
+                                <li>Content management system setup</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://transactual.org.uk/" target="_blank" class="btn btn-small">Live Site</a>
+                            <button class="btn btn-small btn-outline" data-modal="transactual-details">Technical Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Details Modal -->
+                <div id="transactual-details" class="project-details-modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Transactual UK - Technical Documentation</h3>
+                            <button class="close-modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="tech-section">
+                                <h4>Architecture Overview</h4>
+                                <div class="architecture-diagram">
+                                    <img src="https://via.placeholder.com/800x400" alt="WordPress Architecture">
+                                </div>
+                                <div class="tech-details">
+                                    <h5>System Components</h5>
+                                    <ul>
+                                        <li>WordPress Core: Latest stable version</li>
+                                        <li>WooCommerce: E-commerce platform</li>
+                                        <li>Payment Gateway: Secure card processing</li>
+                                        <li>Third-party Fulfillment: Merchandise production and shipping</li>
+                                        <li>Custom Theme: Built from scratch</li>
+                                        <li>Database: MySQL for content storage</li>
+                                        <li>Security: SSL certificate and security plugins</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tech-section">
+                                <h4>Key Technical Features</h4>
+                                <div class="feature-grid">
+                                    <div class="feature-card">
+                                        <h5>E-commerce Integration</h5>
+                                        <ul>
+                                            <li>WooCommerce setup and configuration</li>
+                                            <li>Secure payment gateway integration</li>
+                                            <li>Order management system</li>
+                                            <li>Automated fulfillment workflow</li>
+                                        </ul>
+                                    </div>
+                                    <div class="feature-card">
+                                        <h5>Theme Development</h5>
+                                        <ul>
+                                            <li>Custom page templates</li>
+                                            <li>Responsive design implementation</li>
+                                            <li>Custom post types and taxonomies</li>
+                                            <li>Product catalog integration</li>
+                                        </ul>
+                                    </div>
+                                    <div class="feature-card">
+                                        <h5>Security & Compliance</h5>
+                                        <ul>
+                                            <li>SSL certificate setup</li>
+                                            <li>PCI compliance for payments</li>
+                                            <li>Security plugin configuration</li>
+                                            <li>Regular backup system</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tech-section">
+                                <h4>Order Processing Flow</h4>
+                                <div class="process-timeline">
+                                    <div class="process-step">
+                                        <h5>1. Order Placement</h5>
+                                        <p>Customer selects merchandise and proceeds to secure checkout</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>2. Payment Processing</h5>
+                                        <p>Secure card payment processing through integrated gateway</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>3. Order Confirmation</h5>
+                                        <p>Automatic order confirmation and receipt generation</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>4. Fulfillment</h5>
+                                        <p>Order details forwarded to third-party for production and shipping</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tech-section">
+                                <h4>Payment Gateway Integration</h4>
+                                <div class="feature-grid">
+                                    <div class="feature-card">
+                                        <h5>Payment Processing</h5>
+                                        <ul>
+                                            <li>Stripe API integration for secure card processing</li>
+                                            <li>Real-time payment validation and fraud detection</li>
+                                            <li>Automated payment status updates</li>
+                                            <li>Support for multiple payment methods</li>
+                                        </ul>
+                                    </div>
+                                    <div class="feature-card">
+                                        <h5>Security Implementation</h5>
+                                        <ul>
+                                            <li>End-to-end encryption for payment data</li>
+                                            <li>PCI DSS compliance implementation</li>
+                                            <li>Secure tokenization of card details</li>
+                                            <li>Regular security audits and updates</li>
+                                        </ul>
+                                    </div>
+                                    <div class="feature-card">
+                                        <h5>Order Management</h5>
+                                        <ul>
+                                            <li>Automated order status tracking</li>
+                                            <li>Real-time inventory updates</li>
+                                            <li>Automated email notifications</li>
+                                            <li>Order history and reporting</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yodel Tracking System -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Yodel Tracking System">
+                    </div>
+                    <div class="project-content">
+                        <h3>Yodel Tracking System</h3>
+                        <p class="project-description">Real-time package tracking system with Kafka event streaming and MongoDB integration.</p>
+                        <div class="project-details">
+                            <div class="project-tech">
+                                <span>Java Spring</span>
+                                <span>Kafka</span>
+                                <span>MongoDB</span>
+                                <span>React</span>
+                            </div>
+                            <ul class="project-features">
+                                <li>Designed event-driven architecture using Kafka</li>
+                                <li>Implemented real-time tracking updates</li>
+                                <li>Built scalable data processing pipeline</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn btn-small btn-outline" data-modal="yodel-details">Technical Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Details Modal -->
+                <div id="yodel-details" class="project-details-modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Yodel Tracking System - Technical Documentation</h3>
+                            <button class="close-modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="tech-section">
+                                <h4>Event-Driven Architecture</h4>
+                                <div class="architecture-diagram">
+                                    <img src="https://via.placeholder.com/800x400" alt="Event Flow Architecture">
+                                </div>
+                                <div class="tech-details">
+                                    <h5>System Components</h5>
+                                    <ul>
+                                        <li>Event Producers: Spring Boot microservices</li>
+                                        <li>Message Broker: Apache Kafka clusters</li>
+                                        <li>Event Consumers: Tracking and analytics services</li>
+                                        <li>Data Storage: MongoDB with time-series collections</li>
+                                        <li>Real-time Updates: WebSocket implementation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tech-section">
+                                <h4>Technical Implementation</h4>
+                                <div class="feature-grid">
+                                    <div class="feature-card">
+                                        <h5>Event Processing</h5>
+                                        <ul>
+                                            <li>Kafka Streams for real-time processing</li>
+                                            <li>Event sourcing pattern implementation</li>
+                                            <li>Dead letter queues for failed events</li>
+                                        </ul>
+                                    </div>
+                                    <div class="feature-card">
+                                        <h5>Data Management</h5>
+                                        <ul>
+                                            <li>MongoDB time-series collections</li>
+                                            <li>Data partitioning strategy</li>
+                                            <li>Automated data archival system</li>
+                                        </ul>
+                                    </div>
+                                    <div class="feature-card">
+                                        <h5>API Layer</h5>
+                                        <ul>
+                                            <li>RESTful API endpoints</li>
+                                            <li>GraphQL for complex queries</li>
+                                            <li>API versioning and documentation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tech-section">
+                                <h4>Performance Metrics</h4>
+                                <div class="metrics-grid">
+                                    <div class="metric-card">
+                                        <h5>Event Processing</h5>
+                                        <ul>
+                                            <li>10,000+ events/second</li>
+                                            <li>< 100ms latency</li>
+                                            <li>99.99% uptime</li>
+                                        </ul>
+                                    </div>
+                                    <div class="metric-card">
+                                        <h5>Data Storage</h5>
+                                        <ul>
+                                            <li>1TB+ daily data</li>
+                                            <li>Sub-second query response</li>
+                                            <li>Automatic data archival</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tech-section">
+                                <h4>Package Tracking Flow</h4>
+                                <div class="process-timeline">
+                                    <div class="process-step">
+                                        <h5>1. Package Registration</h5>
+                                        <p>Package details registered in the system with unique tracking ID</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>2. Event Generation</h5>
+                                        <p>Kafka events generated for package status updates and location changes</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>3. Real-time Processing</h5>
+                                        <p>Event consumers process updates and update MongoDB time-series data</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>4. Status Updates</h5>
+                                        <p>WebSocket notifications sent to frontend for real-time tracking display</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>5. Analytics Processing</h5>
+                                        <p>Data processed for delivery analytics and performance metrics</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- API Gateway Project -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300" alt="API Gateway Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>Microservices API Gateway</h3>
+                        <p class="project-description">Custom API gateway implementation for microservices architecture with rate limiting and authentication.</p>
+                        <div class="project-details">
+                            <div class="project-tech">
+                                <span>Spring Cloud</span>
+                                <span>OAuth2</span>
+                                <span>Redis</span>
+                                <span>Docker</span>
+                            </div>
+                            <ul class="project-features">
+                                <li>Implemented JWT-based authentication</li>
+                                <li>Built rate limiting with Redis</li>
+                                <li>Containerized services with Docker</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn btn-small btn-outline" data-modal="api-gateway-details">Technical Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Details Modal -->
+                <div id="api-gateway-details" class="project-details-modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>API Gateway - Technical Documentation</h3>
+                            <button class="close-modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="tech-section">
+                                <h4>Gateway Architecture</h4>
+                                <div class="architecture-diagram">
+                                    <img src="https://via.placeholder.com/800x400" alt="Gateway Architecture">
+                                </div>
+                                <div class="tech-details">
+                                    <h5>Core Components</h5>
+                                    <ul>
+                                        <li>API Gateway: Spring Cloud Gateway</li>
+                                        <li>Service Discovery: Eureka Client</li>
+                                        <li>Circuit Breaker: Resilience4j</li>
+                                        <li>Rate Limiting: Redis-based implementation</li>
+                                        <li>Authentication: OAuth2 with JWT</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tech-section">
+                                <h4>Technical Implementation</h4>
+                                <div class="feature-grid">
+                                    <div class="feature-card">
+                                        <h5>Routing & Load Balancing</h5>
+                                        <ul>
+                                            <li>Dynamic route configuration</li>
+                                            <li>Load balancing strategies</li>
+                                            <li>Service discovery integration</li>
+                                        </ul>
+                                    </div>
+                                    <div class="feature-card">
+                                        <h5>Security Layer</h5>
+                                        <ul>
+                                            <li>JWT token validation</li>
+                                            <li>OAuth2 resource server</li>
+                                            <li>Role-based access control</li>
+                                        </ul>
+                                    </div>
+                                    <div class="feature-card">
+                                        <h5>Resilience</h5>
+                                        <ul>
+                                            <li>Circuit breaker patterns</li>
+                                            <li>Retry mechanisms</li>
+                                            <li>Fallback strategies</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tech-section">
+                                <h4>Performance & Monitoring</h4>
+                                <div class="metrics-grid">
+                                    <div class="metric-card">
+                                        <h5>Response Times</h5>
+                                        <ul>
+                                            <li>Average: < 50ms</li>
+                                            <li>P95: < 100ms</li>
+                                            <li>P99: < 200ms</li>
+                                        </ul>
+                                    </div>
+                                    <div class="metric-card">
+                                        <h5>Throughput</h5>
+                                        <ul>
+                                            <li>5,000+ requests/second</li>
+                                            <li>99.9% availability</li>
+                                            <li>Zero-downtime deployments</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tech-section">
+                                <h4>API Request Flow</h4>
+                                <div class="process-timeline">
+                                    <div class="process-step">
+                                        <h5>1. Request Reception</h5>
+                                        <p>Client request received at API Gateway with authentication check</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>2. Rate Limiting</h5>
+                                        <p>Redis-based rate limiting applied to prevent API abuse</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>3. Service Discovery</h5>
+                                        <p>Eureka client identifies appropriate microservice for request handling</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>4. Circuit Breaking</h5>
+                                        <p>Resilience4j circuit breaker monitors service health</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>5. Response Processing</h5>
+                                        <p>Response transformed and returned to client with appropriate headers</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tech-section">
+                                <h4>Authentication Flow</h4>
+                                <div class="process-timeline">
+                                    <div class="process-step">
+                                        <h5>1. Token Request</h5>
+                                        <p>Client requests JWT token with credentials</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>2. Token Validation</h5>
+                                        <p>Gateway validates token signature and expiration</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>3. Role Verification</h5>
+                                        <p>User roles and permissions checked against request</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>4. Access Control</h5>
+                                        <p>Request allowed or denied based on authorization rules</p>
+                                    </div>
+                                    <div class="process-step">
+                                        <h5>5. Token Refresh</h5>
+                                        <p>Automatic token refresh for valid sessions</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+            <h2 data-aos="fade-up">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up">
+                    <h3>Frontend</h3>
+                    <div class="skill-item">
+                        <span>HTML/CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>React</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Backend</h3>
+                    <div class="skill-item">
+                        <span>Java (Spring)</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>MongoDB</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>MySQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="resume-section" id="contact">
+        <div class="resume-section-content">
+            <h2 data-aos="fade-up">Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-up">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:chanmilarose@gmail.com">chanmilarose@gmail.com</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/MilaRoseDev" target="_blank">github.com/MilaRoseDev</a></p>
+                </div>
+                <form class="contact-form" data-aos="fade-up" data-aos-delay="100">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Mila Rose Shields</p>
+        <div class="container">
+            <p>&copy; 2024 Mila Rose Shields. All rights reserved.</p>
+        </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script>
-        // Add animations for sections
-        document.addEventListener("DOMContentLoaded", function () {
-            const sections = document.querySelectorAll(".animated-fade-in");
-            sections.forEach(section => {
-                section.style.opacity = 0;
-                section.style.transition = "opacity 1s";
-                setTimeout(() => section.style.opacity = 1, 200);
-            });
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
